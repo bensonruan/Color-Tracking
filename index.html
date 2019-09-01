@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Color Tracking</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/color-tracking.css">
+    <link rel="stylesheet" href="style/color-picker.min.css">
+    <link rel="stylesheet" href="style/range-slider.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src='js/tracking-min.js'></script>
+    <script src='js/color-picker.min.js'></script>
+    <script src='js/rangeslider.min.js'></script>
+    <script src='js/broiler.js'></script>
+</head>
+<body>
+    <main>
+        <div class="container mt-2">
+            <div class="row">
+                <div class="col-12 col-lg-4 col-md-6">
+                    <div class="row col-12 d-block p-0 m-0">
+                            <strong class="d-block">Tracking colors</strong>
+                            <div id="color-list" class="row color-list m-0"></div>
+                            <hr class="d-block m-3">
+                    </div>
+    
+                    <div class="row">
+                        <div class="col-8">
+                            <section id="color-picker"></section>
+                            <div class="p-2">
+                                <label for="tolerance" class="font-weight-bold">Tolerance:</label>
+                                <input type="range" id="tolerance" name="tolerance" min="0" max="100" value="30" step="1">
+                                <span class="rangeslider__tooltip" id ="range-tooltip"></span>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div id="color-picker-selected"></div>
+                            <button id="add-color-button" class="btn btn-primary">Add color</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 offset-lg-1 col-lg-7 col-md-6">
+                    <div class="row">
+                            <div class="col-7">
+                                <input id="image-selector"  type="file">
+                            </div>
+                            <div class="col-5">
+                                <button id="track-button" class="btn btn-dark float-right">Track color</button>
+                            </div>
+                    </div>
+                    <hr class="m-3">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="row">
+                                    <div class="col-7">
+                                        <strong class="ml-3">Image</strong>
+                                    </div>
+                                    <div class="col-5">
+                                        <button id="clear-button" class="btn btn-dark float-right">Clear</button>
+                                    </div>
+                            </div>
+                            
+                            <div class="col-12 p-0 tooltip" id="image-container">
+                                <img id="selected-image" class="p-0 col-12" src="images/CMYK.jpg" />
+                                <span class="tooltiptext">Click to pick color from image</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src='js/range-slider.js'></script>
+    <script src="js/color-tracking.js"></script>
+</body>
+</html>
