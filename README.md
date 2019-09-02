@@ -1,5 +1,8 @@
 # Color Tracking
  Color Tracking using javascript library tracking.js
+ 
+## Live Demo
+**[https://bensonruan.com/color-tracking-with-tracking-js/](https://bensonruan.com/color-tracking-with-tracking-js/)**
 
 ## Installing
 Clone this repository to your local computer
