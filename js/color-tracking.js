@@ -25,6 +25,10 @@ $( document ).ready(function() {
 });
 
 $(window).on("load", function() {
+    $("#selected-image").broiler(function(color) {
+        var rgbColor = "rgb("+color.r+", "+color.g+", "+color.b+")"; 
+        $('#color-picker-selected').css({backgroundColor : rgbColor});
+    });
     $("#track-button").trigger( "click" );
 });
 
@@ -73,7 +77,7 @@ $("#track-button").click(async function () {
     }
     var img = $("#selected-image").get(0);
     var imageContainer = document.querySelector('#image-container');
-    var tracker = new tracking.ColorTracker(regColors.concat(regColors));
+    var tracker = new tracking.ColorTracker(regColors);
     tracker.on('track', function(event) {
         event.data.forEach(function(rect) {
             drawRect(rect.x, rect.y, rect.width, rect.height, rect.color);

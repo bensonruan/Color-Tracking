@@ -65,7 +65,7 @@
     position: inherit;
 }
 .tooltip span {
-    visibility: hidden;
+    display: none;
     -moz-border-radius:10px 10px 10px 10px;  
     border-radius:10px 10px 10px 10px; 
     border:solid 1px #000;
@@ -73,10 +73,11 @@
     padding: 5px;
 }
 .tooltip:hover span {
-    visibility: visible;
+    display: block;
     position:fixed;
 }
 
 .btn {
-    width: 110px;
+    width: 100px;
+    padding: 0.9rem 0;
 }
