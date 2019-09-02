@@ -52,8 +52,9 @@ $("#selected-image").on("load", function () {
 $("#add-color-button").click(async function () {    
     var color = $('#color-picker-selected').css( "background-color" );
     regColors.push(color);
+    var t = slider.value;
     tracking.ColorTracker.registerColor(color, function(r, g, b) {
-        return getColorDistance(getRGB(color), {r: r, g: g, b: b}) < slider.value
+        return getColorDistance(getRGB(color), {r: r, g: g, b: b}) < t
     });
     displayColorList(regColors, 'color-list')
 });
