@@ -75,8 +75,6 @@ $("#track-button").click(async function () {
     if($( ".rect" ).length){
         $( ".rect" ).remove();
     }
-    var img = $("#selected-image").get(0);
-    var imageContainer = document.querySelector('#image-container');
     var tracker = new tracking.ColorTracker(regColors);
     tracker.on('track', function(event) {
         event.data.forEach(function(rect) {
