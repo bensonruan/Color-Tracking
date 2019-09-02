@@ -1,5 +1,8 @@
 # Color Tracking
  Color Tracking using javascript library tracking.js
+ 
+## Live Demo
+**[https://bensonruan.com/color-tracking-with-tracking-js/](https://bensonruan.com/color-tracking-with-tracking-js/)**
 
 ## Installing
 Clone this repository to your local computer
@@ -22,5 +25,6 @@ By default tracking.js color tracker provides out of the box three default color
 ## Library
 * [jquery](https://code.jquery.com/jquery-3.3.1.min.js) - JQuery
 * [tracking.js](https://github.com/eduardolundgren/tracking.js) - JavaScript library for real-time color tracking, face detection
-* [color-picker](https://github.com/tovic/color-picker) - JavaScript library for color picker
-* [rangeslider.js](https://github.com/andreruffert/rangeslider.js) - JavaScript library for range slider
+* [color-picker](https://github.com/tovic/color-picker) - color picker plugin written in pure JavaScript 
+* [rangeslider.js](https://github.com/andreruffert/rangeslider.js) - jQuery polyfill for the range slider element
+* [broiler.js](https://github.com/GordonLesti/broilerjs) - jQuery plugin to get the color of an image pixel by click 
