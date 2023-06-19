@@ -28,3 +28,6 @@ By default tracking.js color tracker provides out of the box three default color
 * [color-picker](https://github.com/tovic/color-picker) - color picker plugin written in pure JavaScript 
 * [rangeslider.js](https://github.com/andreruffert/rangeslider.js) - jQuery polyfill for the range slider element
 * [broiler.js](https://github.com/GordonLesti/broilerjs) - jQuery plugin to get the color of an image pixel by click 
+
+## Support me 
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/W7W6METMY)
